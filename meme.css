@@ -1,0 +1,99 @@
+.meme{ /* Class for the meme container */
+    position: relative; /* This sets the position relative so the img,caption, and button will be set relative to this*/
+    border: 2em; 
+    margin: 10px auto 10px;
+    height: 400px;
+    width: 500px;
+}
+
+.memeIMG{ 
+    position: absolute;
+    width: 100%; /* The width will be 100% of the parent width */
+    height: 100%; 
+    left: 0%; /* centers the img in the parent div*/
+}
+
+.topCaption{
+    position: relative;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; /* Creates a black outline over white text */ 
+    text-align: center; /* Centers the text */
+}
+
+.bottomCaption{
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; 
+    bottom: 0%; /* Placed at the bottom of the parent element */ 
+    width: 100%;
+    text-align: center;
+}
+
+.deleteBtn {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 110%;
+    color: black;
+    border-style: solid;
+    height: 40px;
+    width: 85px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    transition-duration: 0.4s;
+}
+  
+  .deleteBtn:hover {
+    background-color: #d12020; /* Green */
+    color: white;
+  }
+
+  #head { /* H1 class */ 
+    text-align: center;
+    margin: 15px 2px 15px 2px;
+  }
+
+  #sub { /* H2 class */
+    text-align: center;
+    font-weight: normal;
+    font-size: large;
+  }
+
+  #memeForm { /* Class for the form that will be submitted */
+    text-align: center;
+    border: solid 0.5px;
+    padding: 15px;
+    background-color: #F2F2F2;
+    width: 75%;
+    margin: 0px 10% 10px;
+  }
+
+  .memeInput { /* Class for the three input boxes (Image URL, Top and Bottom Caption) */
+    width: 60%;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:6px;
+    height: 17px;
+    float: right; /* Makes all the input boxes the same size and puts them in line with eachother */
+  }
+
+
+  #submitButton {
+    display: inline-block;
+    height: 40px;
+    width: 85px;
+    text-align:center;
+    border-radius: 4px;
+    background-color: #04AA6D;
+  }
+
+
+  #submitButton:hover {
+    background-color: #009105; /* Green */
+    color: white;
+    cursor: pointer;
+  }
